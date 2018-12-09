@@ -568,10 +568,11 @@ key_bindings:
   - { key: Key6,      mods: Alt|Shift, chars: "\x1b^"                    } # Alt + ^
   - { key: Backslash, mods: Alt,       chars: "\x1b\\"                   } # Alt + \
   - { key: Backslash, mods: Alt|Shift, chars: "\x1b|"                    } # Alt + |201\"}"}
-  - { key: Period,   mods: Alt,       chars: "\x1b."                     }
-  - { key: Key8,     mods: Alt|Shift, chars: "\x1b*"                     }
-  - { key: Key3,     mods: Alt|Shift, chars: "\x1b#"                     }
+  - { key: Period,   mods: Alt,        chars: "\x1b."                     }
+  - { key: Key8,     mods: Alt|Shift,  chars: "\x1b*"                     }
+  - { key: Key3,     mods: Alt|Shift,  chars: "\x1b#"                     }
   - { key: Key2,     mods: Control|Shift, chars: "\x00"                  } # C-@
+  - { key: Key2,     mods: Alt|Shift,  chars: "\x1b@"                    } # M-@
   - { key: LBracket, mods: Alt, chars: "\x1b["                           } # M-[
   - { key: RBracket, mods: Alt, chars: "\x1b]"                           } # M-]
   - { key: LBracket, mods: Alt|Shift, chars: "\x1b{"                     } # M-{
