@@ -302,8 +302,8 @@ live_config_reload: true
 # Entries in `shell.args` are passed unmodified as arguments to the shell.
 shell:
   program: /usr/local/bin/fish
-  args:
-    - --command=tmux
+#  args:
+#    - --command=tmux
 
 # Key bindings
 #
@@ -579,3 +579,4 @@ key_bindings:
   - { key: RBracket, mods: Alt|Shift, chars: "\x1b}"                     } # M-}
   - { key: Period,   mods: Alt|Shift, chars: "\x1b>"                     } # M->
   - { key: Comma,    mods: Alt|Shift, chars: "\x1b<"                     } # M-<
+  - { key: Q,        mods: Control, chars: "\x11"                        }
