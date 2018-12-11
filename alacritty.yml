@@ -19,7 +19,7 @@ window:
   # If both are `0`, this setting is ignored.
   dimensions:
     columns: 180
-    lines: 48
+    lines: 54
 
   # Window padding (changes require restart)
   #
@@ -27,7 +27,7 @@ window:
   # by DPI and the specified value is always added at both opposing sides.
   padding:
     x: 2
-    y: 2
+    y: 0
 
   # Spread additional padding evenly around the terminal content.
   dynamic_padding: false
@@ -48,7 +48,7 @@ window:
   #     - none: Neither borders nor title bar
   #     - buttonless: Title bar, transparent background and title bar buttons
   #     - transparent: Title bar, transparent background, but no title bar buttons
-  decorations: full
+  decorations: buttonless
 
   # When true, alacritty starts maximized.
   start_maximized: false
@@ -568,9 +568,9 @@ key_bindings:
   - { key: Key6,      mods: Alt|Shift, chars: "\x1b^"                    } # Alt + ^
   - { key: Backslash, mods: Alt,       chars: "\x1b\\"                   } # Alt + \
   - { key: Backslash, mods: Alt|Shift, chars: "\x1b|"                    } # Alt + |201\"}"}
-  - { key: Period,   mods: Alt,        chars: "\x1b."                     }
-  - { key: Key8,     mods: Alt|Shift,  chars: "\x1b*"                     }
-  - { key: Key3,     mods: Alt|Shift,  chars: "\x1b#"                     }
+  - { key: Period,   mods: Alt,        chars: "\x1b."                    }
+  - { key: Key8,     mods: Alt|Shift,  chars: "\x1b*"                    }
+  - { key: Key3,     mods: Alt|Shift,  chars: "\x1b#"                    }
   - { key: Key2,     mods: Control|Shift, chars: "\x00"                  } # C-@
   - { key: Key2,     mods: Alt|Shift,  chars: "\x1b@"                    } # M-@
   - { key: LBracket, mods: Alt, chars: "\x1b["                           } # M-[
