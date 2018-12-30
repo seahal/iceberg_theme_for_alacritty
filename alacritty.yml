@@ -555,10 +555,12 @@ key_bindings:
   - { key: RBracket,  mods: Command, chars: "\e[1;P]"                    } # H-]
   - { key: Comma,     mods: Command, chars: "\e[1;P,"                    } # H-,
   - { key: Period,    mods: Command, chars: "\e[1;P."                    } # H-.
+  - { key: Slash,     mods: Command, chars: "\e[1;P/"                    } # H-/
   - { key: LBracket,  mods: Command|Shift, chars: "\e[1;P{"              } # H-{
   - { key: RBracket,  mods: Command|Shift, chars: "\e[1;P}"              } # H-}
   - { key: Comma,     mods: Command|Shift, chars: "\e[1;P<"              } # H-<
   - { key: Period,    mods: Command|Shift, chars: "\e[1;P>"              } # H->
+#  - { key: Slash,     mods: Command|Shift, chars: "Why Alacritty can not use Command + /."     }
 
 
 # Colors
