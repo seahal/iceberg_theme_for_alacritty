@@ -384,6 +384,11 @@ key_bindings:
   - { key: Equals,    mods: Command, action: IncreaseFontSize            }
   - { key: Minus,     mods: Command, action: DecreaseFontSize            }
   # Shift|Command
+  - { key: LBracket,  mods: Command|Shift, chars: "\e[1;P{"              } # H-{
+  - { key: RBracket,  mods: Command|Shift, chars: "\e[1;P}"              } # H-}
+  - { key: Comma,     mods: Command|Shift, chars: "\e[1;P<"              } # H-<
+  - { key: Period,    mods: Command|Shift, chars: "\e[1;P>"              } # H->
+  - { key: Slash,     mods: Command|Shift, chars: "Why Alacritty can not use Command + /."     }
   # Alt
   # Shift|Alt
   # Control
@@ -557,11 +562,6 @@ key_bindings:
   - { key: Q,         mods: Control, chars: "\x11"                       } # For tmux prefix
   - { key: Semicolon, mods: Alt,     chars: "\x1b;"                      }
   - { key: Slash,     mods: Alt,     chars: "\x1b/"                      }
-  - { key: LBracket,  mods: Command|Shift, chars: "\e[1;P{"              } # H-{
-  - { key: RBracket,  mods: Command|Shift, chars: "\e[1;P}"              } # H-}
-  - { key: Comma,     mods: Command|Shift, chars: "\e[1;P<"              } # H-<
-  - { key: Period,    mods: Command|Shift, chars: "\e[1;P>"              } # H->
-  - { key: Slash,     mods: Command|Shift, chars: "Why Alacritty can not use Command + /."     }
 
 
 # Colors
