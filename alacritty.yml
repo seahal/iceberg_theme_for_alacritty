@@ -326,7 +326,34 @@ key_bindings:
   - { key: End,                     chars: "\x1bOF",   mode: AppCursor   }
   - { key: End,                     chars: "\x1b[F",   mode: ~AppCursor  }
   - { key: PageUp,                  chars: "\x1b[5~"                     }
+  - { key: PageDown,                chars: "\x1b[6~"                     }
+  - { key: Back,                    chars: "\x7f"                        }
+  - { key: Insert,                  chars: "\x1b[2~"                     }
+  - { key: Delete,                  chars: "\x1b[3~"                     }
+  - { key: Left,                    chars: "\x1b[D",   mode: ~AppCursor  }
+  - { key: Left,                    chars: "\x1bOD",   mode: AppCursor   }
+  - { key: Right,                   chars: "\x1b[C",   mode: ~AppCursor  }
+  - { key: Right,                   chars: "\x1bOC",   mode: AppCursor   }
+  - { key: Up,                      chars: "\x1b[A",   mode: ~AppCursor  }
+  - { key: Up,                      chars: "\x1bOA",   mode: AppCursor   }
+  - { key: Down,                    chars: "\x1b[B",   mode: ~AppCursor  }
+  - { key: Down,                    chars: "\x1bOB",   mode: AppCursor   }
+  - { key: F1,                      chars: "\x1bOP"                      }
+  - { key: F2,                      chars: "\x1bOQ"                      }
+  - { key: F3,                      chars: "\x1bOR"                      }
+  - { key: F4,                      chars: "\x1bOS"                      }
+  - { key: F5,                      chars: "\x1b[15~"                    }
+  - { key: F6,                      chars: "\x1b[17~"                    }
+  - { key: F7,                      chars: "\x1b[18~"                    }
+  - { key: F8,                      chars: "\x1b[19~"                    }
+  - { key: F9,                      chars: "\x1b[20~"                    }
+  - { key: F10,                     chars: "\x1b[21~"                    }
+  - { key: F11,                     chars: "\x1b[23~"                    }
+  - { key: F12,                     chars: "\x1b[24~"                    }
+  - { key: NumpadEnter,             chars: "\n"                          }
   # Shift
+  # Control
+  # Control|Shift
   # Command
   - { key: A,         mods: Command, chars: "\e[1;P9"                    }
   - { key: B,         mods: Command, chars: "\e[1;P10"                   }
@@ -383,60 +410,35 @@ key_bindings:
   - { key: Key0,      mods: Command, action: ResetFontSize               }
   - { key: Equals,    mods: Command, action: IncreaseFontSize            }
   - { key: Minus,     mods: Command, action: DecreaseFontSize            }
-  # Shift|Command
-  - { key: LBracket,  mods: Command|Shift, chars: "\e[1;P{"              } # H-{
+  # Command|Shift
+  - { key: LBracket,  mods: Command|Shift, chars: "\e[1;P{"              } # H-{
   - { key: RBracket,  mods: Command|Shift, chars: "\e[1;P}"              } # H-}
   - { key: Comma,     mods: Command|Shift, chars: "\e[1;P<"              } # H-<
   - { key: Period,    mods: Command|Shift, chars: "\e[1;P>"              } # H->
   - { key: Slash,     mods: Command|Shift, chars: "Why Alacritty can not use Command + /."     }
   # Alt
-  # Shift|Alt
-  # Control
-  # Shift|Control
+  # Alt|Shift
+  # N/A
   - { key: L,        mods: Control, action: ClearLogNotice               }
   - { key: L,        mods: Control, chars: "\x0c"                        }
   - { key: PageUp,   mods: Shift,   chars: "\x1b[5;2~"                   }
   - { key: PageUp,   mods: Control, chars: "\x1b[5;5~"                   }
   - { key: PageDown, mods: Shift,   chars: "\x1b[6;2~"                   }
   - { key: PageDown, mods: Control, chars: "\x1b[6;5~"                   }
-  - { key: PageDown,                chars: "\x1b[6~"                     }
   - { key: Tab,      mods: Shift,   chars: "\x1b[Z"                      }
-  - { key: Back,                    chars: "\x7f"                        }
   - { key: Back,     mods: Alt,     chars: "\x1b\x7f"                    }
-  - { key: Insert,                  chars: "\x1b[2~"                     }
-  - { key: Delete,                  chars: "\x1b[3~"                     }
   - { key: Left,     mods: Shift,   chars: "\x1b[1;2D"                   }
   - { key: Left,     mods: Control, chars: "\x1b[1;5D"                   }
   - { key: Left,     mods: Alt,     chars: "\x1b[1;3D"                   }
-  - { key: Left,                    chars: "\x1b[D",   mode: ~AppCursor  }
-  - { key: Left,                    chars: "\x1bOD",   mode: AppCursor   }
   - { key: Right,    mods: Shift,   chars: "\x1b[1;2C"                   }
   - { key: Right,    mods: Control, chars: "\x1b[1;5C"                   }
   - { key: Right,    mods: Alt,     chars: "\x1b[1;3C"                   }
-  - { key: Right,                   chars: "\x1b[C",   mode: ~AppCursor  }
-  - { key: Right,                   chars: "\x1bOC",   mode: AppCursor   }
   - { key: Up,       mods: Shift,   chars: "\x1b[1;2A"                   }
   - { key: Up,       mods: Control, chars: "\x1b[1;5A"                   }
   - { key: Up,       mods: Alt,     chars: "\x1b[1;3A"                   }
-  - { key: Up,                      chars: "\x1b[A",   mode: ~AppCursor  }
-  - { key: Up,                      chars: "\x1bOA",   mode: AppCursor   }
   - { key: Down,     mods: Shift,   chars: "\x1b[1;2B"                   }
   - { key: Down,     mods: Control, chars: "\x1b[1;5B"                   }
   - { key: Down,     mods: Alt,     chars: "\x1b[1;3B"                   }
-  - { key: Down,                    chars: "\x1b[B",   mode: ~AppCursor  }
-  - { key: Down,                    chars: "\x1bOB",   mode: AppCursor   }
-  - { key: F1,                      chars: "\x1bOP"                      }
-  - { key: F2,                      chars: "\x1bOQ"                      }
-  - { key: F3,                      chars: "\x1bOR"                      }
-  - { key: F4,                      chars: "\x1bOS"                      }
-  - { key: F5,                      chars: "\x1b[15~"                    }
-  - { key: F6,                      chars: "\x1b[17~"                    }
-  - { key: F7,                      chars: "\x1b[18~"                    }
-  - { key: F8,                      chars: "\x1b[19~"                    }
-  - { key: F9,                      chars: "\x1b[20~"                    }
-  - { key: F10,                     chars: "\x1b[21~"                    }
-  - { key: F11,                     chars: "\x1b[23~"                    }
-  - { key: F12,                     chars: "\x1b[24~"                    }
   - { key: F1,       mods: Shift,   chars: "\x1b[1;2P"                   }
   - { key: F2,       mods: Shift,   chars: "\x1b[1;2Q"                   }
   - { key: F3,       mods: Shift,   chars: "\x1b[1;2R"                   }
@@ -473,7 +475,6 @@ key_bindings:
   - { key: F10,      mods: Alt,     chars: "\x1b[21;6~"                  }
   - { key: F11,      mods: Alt,     chars: "\x1b[23;6~"                  }
   - { key: F12,      mods: Alt,     chars: "\x1b[24;6~"                  }
-  - { key: NumpadEnter,             chars: "\n"                          }
 # For OSX
   - { key: A,         mods: Alt,       chars: "\x1ba"                    }
   - { key: B,         mods: Alt,       chars: "\x1bb"                    }
@@ -552,6 +553,7 @@ key_bindings:
   - { key: Key8,      mods: Alt|Shift, chars: "\x1b*"                    }
   - { key: Key3,      mods: Alt|Shift, chars: "\x1b#"                    }
   - { key: Key2,      mods: Control|Shift, chars: "\x00"                 } # C-@
+  - { key: Q,         mods: Control, chars: "\x11"                       } # For tmux prefix
   - { key: Key2,      mods: Alt|Shift,  chars: "\x1b@"                   } # M-@
   - { key: LBracket,  mods: Alt, chars: "\x1b["                          } # M-[
   - { key: RBracket,  mods: Alt, chars: "\x1b]"                          } # M-]
@@ -559,7 +561,6 @@ key_bindings:
   - { key: RBracket,  mods: Alt|Shift, chars: "\x1b}"                    } # M-}
   - { key: Period,    mods: Alt|Shift, chars: "\x1b>"                    } # M->
   - { key: Comma,     mods: Alt|Shift, chars: "\x1b<"                    } # M-<
-  - { key: Q,         mods: Control, chars: "\x11"                       } # For tmux prefix
   - { key: Semicolon, mods: Alt,     chars: "\x1b;"                      }
   - { key: Slash,     mods: Alt,     chars: "\x1b/"                      }
 
