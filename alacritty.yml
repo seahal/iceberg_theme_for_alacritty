@@ -357,7 +357,7 @@ key_bindings:
   # Command
   - { key: A,         mods: Command, chars: "\e[1;P9"                    }
   - { key: B,         mods: Command, chars: "\e[1;P10"                   }
-  - { key: C,         mods: Command, action: Copy                        }
+  - { key: B,         mods: Command, chars: "\e[1;P11"                   }
   - { key: D,         mods: Command, chars: "\e[1;P12"                   }
   - { key: E,         mods: Command, chars: "\e[1;P13"                   }
   - { key: F,         mods: Command, chars: "\e[1;P14"                   }
@@ -376,7 +376,7 @@ key_bindings:
   - { key: S,         mods: Command, chars: "\e[1;P27"                   }
   - { key: T,         mods: Command, chars: "\e[1;P28"                   }
   - { key: U,         mods: Command, chars: "\e[1;P29"                   }
-  - { key: V,         mods: Command, action: Paste                       }
+  - { key: V,         mods: Command, chars: "\e[1;P30"                   }
   - { key: W,         mods: Command, chars: "\e[1;P31"                   }
   - { key: X,         mods: Command, chars: "\e[1;P32"                   }
   - { key: Y,         mods: Command, chars: "\e[1;P33"                   }
