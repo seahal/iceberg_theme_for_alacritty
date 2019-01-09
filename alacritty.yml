@@ -19,7 +19,7 @@ window:
   # If both are `0`, this setting is ignored.
   dimensions:
     columns: 200
-    lines: 47
+    lines: 51
 
   # Window padding (changes require restart)
   #
@@ -87,19 +87,19 @@ tabspaces: 8
 font:
   # Normal (roman) font face
   normal:
-    family: Ricty Discord for Powerline
+    family: RictyDiminishedDiscord NF
     # The `style` can be specified to pick a specific face.
     style: Regular
 
   # Bold font face
   bold:
-    family: Ricty Discord for Powerline
+    family: RictyDiminishedDiscord NF
     # The `style` can be specified to pick a specific face.
     style: Bold
 
   # Italic font face
   italic:
-    family: Ricty Discord for Powerline
+    family: RictyDiminishedDiscord NF
     # The `style` can be specified to pick a specific face.
     style: Italic
 
@@ -110,14 +110,14 @@ font:
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
     x: 0
-    y: 8
+    y: 5
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
   # increasing `y` moves the glyph upwards.
   glyph_offset:
     x: 0
-    y: 4
+    y: 0
 
   # Thin stroke font rendering (OS X only)
   #
