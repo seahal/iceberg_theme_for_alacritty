@@ -357,7 +357,7 @@ key_bindings:
   # Command
   - { key: A,         mods: Command, chars: "\e[1;P9"                    }
   - { key: B,         mods: Command, chars: "\e[1;P10"                   }
-  - { key: B,         mods: Command, chars: "\e[1;P11"                   }
+  - { key: C,         mods: Command, chars: "\e[1;P11"                   }
   - { key: D,         mods: Command, chars: "\e[1;P12"                   }
   - { key: E,         mods: Command, chars: "\e[1;P13"                   }
   - { key: F,         mods: Command, chars: "\e[1;P14"                   }
@@ -411,11 +411,37 @@ key_bindings:
   - { key: Equals,    mods: Command, action: IncreaseFontSize            }
   - { key: Minus,     mods: Command, action: DecreaseFontSize            }
   # Command|Shift
+  - { key: Key2,      mods: Command|Shift, chars: "\e[1;P@"              } # H-@
   - { key: LBracket,  mods: Command|Shift, chars: "\e[1;P{"              } # H-{
   - { key: RBracket,  mods: Command|Shift, chars: "\e[1;P}"              } # H-}
   - { key: Comma,     mods: Command|Shift, chars: "\e[1;P<"              } # H-<
   - { key: Period,    mods: Command|Shift, chars: "\e[1;P>"              } # H->
-  - { key: Slash,     mods: Command|Shift, chars: "Why Alacritty can not use Command + /."     }
+  - { key: A,        mods: Command|Shift, chars: "\e[2;P9"               }
+  - { key: B,        mods: Command|Shift, chars: "\e[2;P10"              }
+  - { key: C,        mods: Command|Shift, chars: "\e[2;P11"              }
+  - { key: D,        mods: Command|Shift, chars: "\e[2;P12"              }
+  - { key: E,        mods: Command|Shift, chars: "\e[2;P13"              }
+  - { key: F,        mods: Command|Shift, chars: "\e[2;P14"              }
+  - { key: G,        mods: Command|Shift, chars: "\e[2;P15"              }
+  - { key: H,        mods: Command|Shift, chars: "\e[2;P16"              }
+  - { key: I,        mods: Command|Shift, chars: "\e[2;P17"              }
+  - { key: J,        mods: Command|Shift, chars: "\e[2;P18"              }
+  - { key: K,        mods: Command|Shift, chars: "\e[2;P19"              }
+  - { key: L,        mods: Command|Shift, chars: "\e[2;P20"              }
+  - { key: M,        mods: Command|Shift, chars: "\e[2;P21"              }
+  - { key: N,        mods: Command|Shift, chars: "\e[2;P22"              }
+  - { key: O,        mods: Command|Shift, chars: "\e[2;P23"              }
+  - { key: P,        mods: Command|Shift, chars: "\e[2;P24"              }
+  - { key: Q,        mods: Command|Shift, chars: "\e[2;P25"              }
+  - { key: R,        mods: Command|Shift, chars: "\e[2;P26"              }
+  - { key: S,        mods: Command|Shift, chars: "\e[2;P27"              }
+  - { key: T,        mods: Command|Shift, chars: "\e[2;P28"              }
+  - { key: U,        mods: Command|Shift, chars: "\e[2;P29"              }
+  - { key: V,        mods: Command|Shift, chars: "\e[2;P30"              }
+  - { key: W,        mods: Command|Shift, chars: "\e[2;P31"              }
+  - { key: X,        mods: Command|Shift, chars: "\e[2;P32"              }
+  - { key: Y,        mods: Command|Shift, chars: "\e[2;P33"              }
+  - { key: Z,        mods: Command|Shift, chars: "\e[2;P34"              }
   # Alt
   # Alt|Shift
   # N/A
@@ -567,62 +593,27 @@ key_bindings:
 
 # Colors
 colors:
-  # Default colors
   primary:
-    background: '0x16171E'
-    foreground: '0xD1D2D3'
-
-    # Bright and dim foreground colors
-    #
-    # The dimmed foreground color is calculated automatically if it is not present.
-    # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
-    # is `false`, the normal foreground color will be used.
-    #dim_foreground: '0x9a9a9a'
-    #bright_foreground: '0xffffff'
-
-  # Cursor colors
-  #
-  # Colors which should be used to draw the terminal cursor. If these are unset,
-  # the cursor color will be the inverse of the cell color.
+    background: '0x2E3440'
+    foreground: '0xD8DEE9'
   cursor:
-    text: '0xFEFFFF'
-    cursor: '0xc7c7c7'
-
-  # Normal colors
+    text: '0x2E3440'
+    cursor: '0xD8DEE9'
   normal:
-    black: '0x000000'
-    red: '0xE68E8E'
-    green: '0x83AC8E'
-    yellow: '0xF5B78A'
-    blue: '0x9BB8DC'
-    magenta: '0xBAACE2'
-    cyan: '0x00C5C7'
-    white: '0xC7C7C7'
-
-  # Bright colors
+    black: '0x3B4252'
+    red: '0xBF616A'
+    green: '0xA3BE8C'
+    yellow: '0xEBCB8B'
+    blue: '0x81A1C1'
+    magenta: '0xB48EAD'
+    cyan: '0x88C0D0'
+    white: '0xE5E9F0'
   bright:
-    black: '0x676767'
-    red: '0xFF6D67'
-    green: '0x5FF967'
-    yellow: '0xFEFB67'
-    blue: '0x6871FF'
-    magenta: '0xFF76FF'
-    cyan: '0x5FFDFF'
-    white: '0xFEFFFF'
-
-  # dim:
-  #   black:   '0x333333'
-  #   red:     '0xf2777a'
-  #   green:   '0x99cc99'
-  #   yellow:  '0xffcc66'
-  #   blue:    '0x6699cc'
-  #   magenta: '0xcc99cc'
-  #   cyan:    '0x66cccc'
-  #   white:   '0xdddddd'
-
-  # Indexed Colors
-  #
-  # The indexed colors include all colors from 16 to 256.
-  # When these are not set, they're filled with sensible defaults.
-  #indexed_colors:
-  #  - { index: 16, color: '0x000000' }
+    black: '0x4C566A'
+    red: '0xBF616A'
+    green: '0xA3BE8C'
+    yellow: '0xEBCB8B'
+    blue: '0x81A1C1'
+    magenta: '0xB48EAD'
+    cyan: '0x8FBCBB'
+    white: '0xECEFF4'
