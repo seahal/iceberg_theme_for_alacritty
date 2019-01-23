@@ -452,7 +452,9 @@ key_bindings:
   - { key: Slash,     mods: Command, chars: "\e[1;P/"                    } # H-/
   - { key: Backslash, mods: Command, chars: "\e[1;P\\"                   } # H-\
   - { key: Up,        mods: Command, action: ScrollToTop                 }
-  - { key: Down ,     mods: Command, action: ScrollToBottom              }
+  - { key: Down,      mods: Command, action: ScrollToBottom              }
+  - { key: Left,      mods: Command, action: None                        }
+  - { key: Right,     mods: Command, action: None                        }
   - { key: Equals,    mods: Command, action: IncreaseFontSize            } # H--
   - { key: Minus,     mods: Command, action: DecreaseFontSize            } # H-=
   # Command|Shift
