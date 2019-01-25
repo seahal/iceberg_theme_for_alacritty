@@ -18,7 +18,7 @@ window:
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
   dimensions:
-    columns: 202
+    columns: 204
     lines: 51
 
   # Window padding (changes require restart)
@@ -85,8 +85,8 @@ tabspaces: 8
 
 # Font configuration (changes require restart)
 font:
-  # Normal (roman) font face
   normal:
+  # Normal (roman) font face
     family: RictyDiminishedDiscord NF
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -605,29 +605,37 @@ key_bindings:
   - { key: Backslash, mods: Alt|Shift, chars: "\x1b|"                    } # Alt + |
 
 
-# Colors
+# Base16 Zenburn 256 - alacritty color config
+#  (based on https://github.com/aaron-williamson/base16-alacritty/blob/master/colors/base16-zenburn-256.yml)
 colors:
+  # Default colors
   primary:
-    background: '0x2E3440'
-    foreground: '0xD8DEE9'
+    background: '0x383838'
+    foreground: '0xdcdccc'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0x2E3440'
-    cursor: '0xD8DEE9'
+    text: '0x383838'
+    cursor: '0xdcdccc'
+
+  # Normal colors
   normal:
-    black: '0x3B4252'
-    red: '0xBF616A'
-    green: '0xA3BE8C'
-    yellow: '0xEBCB8B'
-    blue: '0x81A1C1'
-    magenta: '0xB48EAD'
-    cyan: '0x88C0D0'
-    white: '0xE5E9F0'
+    black:   '0x383838'
+    red:     '0xdca3a3'
+    green:   '0x5f7f5f'
+    yellow:  '0xe0cf9f'
+    blue:    '0x7cb8bb'
+    magenta: '0xdc8cc3'
+    cyan:    '0x93e0e3'
+    white:   '0xdcdccc'
+
+  # Bright colors
   bright:
-    black: '0x4C566A'
-    red: '0xBF616A'
-    green: '0xA3BE8C'
-    yellow: '0xEBCB8B'
-    blue: '0x81A1C1'
-    magenta: '0xB48EAD'
-    cyan: '0x8FBCBB'
-    white: '0xECEFF4'
+    black:   '0x6f6f6f'
+    red:     '0xdca3a3'
+    green:   '0x5f7f5f'
+    yellow:  '0xe0cf9f'
+    blue:    '0x7cb8bb'
+    magenta: '0xdc8cc3'
+    cyan:    '0x93e0e3'
+    white:   '0xffffff'
