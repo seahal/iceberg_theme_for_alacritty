@@ -599,7 +599,7 @@ key_bindings:
   - { key: LBracket,  mods: Alt|Shift, chars: "\x1b{"                    } # M-{
   - { key: RBracket,  mods: Alt|Shift, chars: "\x1b}"                    } # M-}
   - { key: Period,    mods: Alt|Shift, chars: "\x1b>"                    } # M->
-  - { key: Comma,     mods: Alt|Shift, chars: "\x1b<"                    } # M-<  
+  - { key: Comma,     mods: Alt|Shift, chars: "\x1b<"                    } # M-<
   - { key: Grave,     mods: Alt|Shift, chars: "\x1b~"                    } # Alt + ~
   - { key: Minus,     mods: Alt|Shift, chars: "\x1b_"                    } # Alt + _
   - { key: Backslash, mods: Alt|Shift, chars: "\x1b|"                    } # Alt + |
